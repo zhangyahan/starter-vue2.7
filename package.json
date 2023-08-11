@@ -7,7 +7,7 @@
   "license": "MIT",
   "homepage": "https://github.com/zhangyahan/pkg-name#readme",
   "engines": {
-    "node": "16.20.1"
+    "node": ">16.20.1"
   },
   "repository": {
     "type": "git",
@@ -34,10 +34,17 @@
     "@vitejs/plugin-vue2": "^2.2.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "less": "^4.2.0",
     "lint-staged": "^13.2.3",
     "pnpm": "^8.6.12",
+    "postcss-less": "^6.0.0",
     "prettier": "^3.0.1",
     "simple-git-hooks": "^2.9.0",
+    "stylelint": "^15.10.2",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-order": "^6.0.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vue-tsc": "^1.8.5"
@@ -49,9 +56,18 @@
     ]
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx,vue}": [
+    "*.{js,ts,jsx,tabSizingFixedMinWidth}": [
       "prettier --write",
       "eslint --fix"
+    ],
+    "*.{vue}": [
+      "stylelint --fix",
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{less,css}": [
+      "stylelint --fix",
+      "prettier --write"
     ]
   }
 }

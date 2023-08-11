@@ -54,5 +54,10 @@ export default defineComponent({
 <style scoped>
 .read-the-docs {
   color: #888;
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
 }
 </style>
