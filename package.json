@@ -56,7 +56,7 @@
     ]
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tabSizingFixedMinWidth}": [
+    "*.{js,ts,jsx,tsx}": [
       "prettier --write",
       "eslint --fix"
     ],
