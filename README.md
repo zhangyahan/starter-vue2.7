@@ -3,6 +3,8 @@
 - [x] **pinia**
 - [x] **vue-router@3**
 - [x] **pnpm**
+- [x] **less**
+- [x] **stylelint**
 - [x] **eslint**
 - [x] **prettier**
 - [x] **commitlint**
