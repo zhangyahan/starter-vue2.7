@@ -60,7 +60,7 @@
       "prettier --write",
       "eslint --fix"
     ],
-    "*.{vue}": [
+    "*.vue": [
       "prettier --write",
       "stylelint --fix",
       "eslint --fix"
