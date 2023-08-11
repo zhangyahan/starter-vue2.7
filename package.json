@@ -7,7 +7,7 @@
   "license": "MIT",
   "homepage": "https://github.com/zhangyahan/pkg-name#readme",
   "engines": {
-    "node": ">16.20.1"
+    "node": ">=16.20.1"
   },
   "repository": {
     "type": "git",
