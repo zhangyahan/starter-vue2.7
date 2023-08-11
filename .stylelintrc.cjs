@@ -15,6 +15,10 @@ module.exports = {
     },
     {
       files: ['*.vue', '**/*.vue'],
+    },
+    {
+      files: ['*.html', '**/*.html'],
+      customSyntax: 'postcss-html',
     }
   ]
 }
