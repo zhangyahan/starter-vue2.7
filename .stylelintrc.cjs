@@ -3,18 +3,18 @@ module.exports = {
   extends: [
     'stylelint-config-standard',
     'stylelint-config-rational-order',
-    'stylelint-config-html'
+    'stylelint-config-standard-scss',
+    'stylelint-config-html',
   ],
   defaultSeverity: 'warning',
   plugins: ['stylelint-order'],
   rules: {},
   overrides: [
     {
-      files: ['*.less', '**/*.less'],
-      customSyntax: 'postcss-less',
+      files: ['*.vue', '**/*.vue']
     },
     {
-      files: ['*.vue', '**/*.vue']
+      files: ['*.less', '**/*.less']
     },
     {
       files: ['*.html', '**/*.html']
