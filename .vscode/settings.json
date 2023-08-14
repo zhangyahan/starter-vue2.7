@@ -3,6 +3,7 @@
     "html",
     "vue",
     "css",
+    "less",
     "scss",
   ]
 }
